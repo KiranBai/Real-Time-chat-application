@@ -20,7 +20,7 @@
                  </div>
             </div>     
         </div>
-         <div class="screen chat-screen ">
+         <div class="screen chat-screen">
             <div class="header">
                 <div class="logo">Real Time Chat App</div>
                 <button id="exit-chat">Exit</button>
@@ -30,14 +30,17 @@
             </div>
             <div class="typebox">
                 <input type="text" id="message-input" placeholder="Type a message...">
+                <button id="emoji-button">😀</button>
+                <input type="file" id="image-input" accept="image/*" style="display: none;">
+                <button id="send-image">📷</button>
                 <button id="send-message">Send</button>
             </div>
          </div>
         
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.0/dist/emoji-button.min.js"></script>
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="chat.js"></script>
    
 </body>
-</html>
+</html> 
